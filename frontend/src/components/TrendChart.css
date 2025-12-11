@@ -1,0 +1,19 @@
+.trend-chart {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.trend-chart h4 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #1a1a1a;
+}
+
+.no-data {
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+}
+

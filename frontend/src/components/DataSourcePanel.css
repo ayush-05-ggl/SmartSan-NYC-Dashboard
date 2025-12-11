@@ -1,0 +1,161 @@
+.data-source-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.source-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.source-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.refresh-button {
+  padding: 0.75rem 1.5rem;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.refresh-button:hover:not(:disabled) {
+  background: #059669;
+}
+
+.refresh-button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.refresh-status {
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.refresh-status.success {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #10b981;
+}
+
+.refresh-status.error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #ef4444;
+}
+
+.sources-list {
+  margin-bottom: 2rem;
+}
+
+.sources-list h4 {
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.sources-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sources-list li {
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.sources-list a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sources-list a:hover {
+  text-decoration: underline;
+}
+
+.data-stats {
+  margin-bottom: 2rem;
+}
+
+.data-stats h4 {
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.stat-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.source-breakdown {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.source-breakdown h5 {
+  margin-bottom: 0.75rem;
+  color: #1a1a1a;
+}
+
+.source-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.transparency-note {
+  padding: 1rem;
+  background: #eff6ff;
+  border-radius: 6px;
+  border-left: 4px solid #3b82f6;
+}
+
+.transparency-note p {
+  margin: 0.5rem 0;
+  color: #1e40af;
+  font-size: 0.875rem;
+}
+

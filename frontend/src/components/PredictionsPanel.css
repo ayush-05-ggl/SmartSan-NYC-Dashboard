@@ -1,0 +1,203 @@
+.predictions-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.predictions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.predictions-header h2 {
+  font-size: 1.75rem;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.prediction-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.prediction-controls label {
+  font-weight: 500;
+  color: #666;
+}
+
+.prediction-controls select {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}
+
+.prediction-controls button {
+  padding: 0.5rem 1rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.prediction-controls button:hover {
+  background: #2563eb;
+}
+
+.predictions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.prediction-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  border-left: 4px solid #8b5cf6;
+}
+
+.prediction-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.data-source {
+  font-size: 0.75rem;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.hotspots-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.hotspot-item {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotspot-location {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.hotspot-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+}
+
+.predicted-count {
+  font-weight: 700;
+  color: #ef4444;
+  font-size: 1rem;
+}
+
+.confidence {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.forecast-summary {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 6px;
+}
+
+.forecast-total, .forecast-confidence {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.forecast-total .value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+.forecast-confidence .value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #10b981;
+}
+
+.forecast-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.forecast-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background: white;
+  border-radius: 4px;
+}
+
+.waste-type {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.tonnage {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.optimization-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background: white;
+  border-radius: 4px;
+}
+
+.stat-row.highlight {
+  background: #dbeafe;
+  font-weight: 600;
+}
+
+.stat-row.savings {
+  background: #d1fae5;
+  color: #065f46;
+  font-weight: 600;
+}
+
+.more-items {
+  text-align: center;
+  padding: 0.75rem;
+  color: #666;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+

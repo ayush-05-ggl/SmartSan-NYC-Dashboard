@@ -1,0 +1,172 @@
+.complaint-list {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.list-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+}
+
+.total-count {
+  background: #f3f4f6;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.requests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.complaint-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.25rem;
+  border-left: 4px solid #3b82f6;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.complaint-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-open {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.status-in_progress {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-closed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.priority-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.priority-urgent {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.priority-high {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.priority-normal {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.card-body {
+  margin-bottom: 1rem;
+}
+
+.complaint-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.complaint-description {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-item {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.info-item .label {
+  font-weight: 600;
+  color: #6b7280;
+  min-width: 80px;
+}
+
+.info-item .value {
+  color: #1a1a1a;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.date-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.date-label {
+  font-weight: 600;
+}
+
+.date-value {
+  color: #1a1a1a;
+}
+
+.no-selection,
+.no-data {
+  text-align: center;
+  padding: 3rem;
+  color: #9ca3af;
+  font-style: italic;
+}
+

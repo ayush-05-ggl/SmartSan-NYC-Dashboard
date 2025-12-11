@@ -1,0 +1,133 @@
+.today-collections {
+  height: 100%;
+}
+
+.component-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.no-data {
+  color: #999;
+  text-align: center;
+  padding: 2rem;
+}
+
+.summary-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-label {
+  font-size: 0.875rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.summary-value {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.summary-value.success {
+  color: #10b981;
+}
+
+.summary-value.warning {
+  color: #f59e0b;
+}
+
+.collections-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.collection-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.875rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 3px solid #3b82f6;
+}
+
+.collection-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.collection-zone {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 0.875rem;
+}
+
+.collection-type {
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: capitalize;
+}
+
+.collection-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+}
+
+.collection-status {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.status-completed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-in_progress {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-missed {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.collection-tonnage {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.more-items {
+  text-align: center;
+  padding: 0.75rem;
+  color: #666;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+

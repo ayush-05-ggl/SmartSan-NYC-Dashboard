@@ -1,0 +1,136 @@
+.smartsan-dashboard {
+  min-height: 100vh;
+  background: #0f172a;
+  color: white;
+}
+
+.dashboard-section {
+  background: #2d2d44;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-section.full-width {
+  max-width: 1600px;
+  margin: 0 auto 1.5rem;
+  padding: 1.5rem 2rem;
+}
+
+.dashboard-main {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.dashboard-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.dashboard-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.map-section {
+  background: #2d2d44;
+  border-radius: 8px;
+  padding: 1.5rem;
+  min-height: 500px;
+}
+
+.map-section h3 {
+  margin: 0 0 1rem 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.optimization-section {
+  background: #2d2d44;
+  border-radius: 8px;
+  min-height: 300px;
+}
+
+.chart-section {
+  background: #2d2d44;
+  border-radius: 8px;
+  min-height: 250px;
+}
+
+.aqi-trend-placeholder {
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aqi-trend-placeholder h3 {
+  margin: 0 0 1rem 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.placeholder-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+}
+
+.placeholder-note {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  background: #0f172a;
+  color: white;
+}
+
+.error-container h2 {
+  color: #ef4444;
+  margin-bottom: 1rem;
+}
+
+.error-container p {
+  color: #94a3b8;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-main {
+    grid-template-columns: 1fr;
+  }
+  
+  .dashboard-right {
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-main {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .map-section {
+    min-height: 400px;
+  }
+}

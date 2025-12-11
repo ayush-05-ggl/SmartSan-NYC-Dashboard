@@ -1,0 +1,194 @@
+.borough-predictions {
+  background: #2d2d44;
+  border-radius: 8px;
+  padding: 1.5rem;
+  min-height: 400px;
+}
+
+.predictions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.predictions-header h3 {
+  margin: 0;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.forecast-period {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 0.5rem;
+  background: #1a1a2e;
+  padding: 0.25rem;
+  border-radius: 6px;
+}
+
+.view-toggle button {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.view-toggle button:hover {
+  color: white;
+}
+
+.view-toggle button.active {
+  background: #4ade80;
+  color: #1a1a2e;
+  font-weight: 600;
+}
+
+.loading,
+.no-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  color: #94a3b8;
+}
+
+.predictions-table {
+  margin-top: 2rem;
+}
+
+.predictions-table h4 {
+  margin: 0 0 1rem 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.predictions-table table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.predictions-table thead {
+  background: #1a1a2e;
+}
+
+.predictions-table th {
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  color: #94a3b8;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #3d3d54;
+}
+
+.predictions-table td {
+  padding: 1rem 0.75rem;
+  border-bottom: 1px solid #3d3d54;
+  color: #e2e8f0;
+}
+
+.predictions-table tbody tr:hover {
+  background: #3d3d54;
+}
+
+.borough-name {
+  font-weight: 600;
+  color: #4ade80;
+}
+
+.predicted-value {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #4ade80;
+}
+
+.trend-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.trend-badge.trend-increasing {
+  background: #ef4444;
+  color: white;
+}
+
+.trend-badge.trend-decreasing {
+  background: #4ade80;
+  color: #1a1a2e;
+}
+
+.trend-badge.trend-stable {
+  background: #3d3d54;
+  color: #94a3b8;
+}
+
+.positive {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.negative {
+  color: #4ade80;
+  font-weight: 600;
+}
+
+.confidence-bar {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background: #1a1a2e;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.confidence-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4ade80, #22c55e);
+  transition: width 0.3s;
+}
+
+.confidence-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .predictions-table {
+    overflow-x: auto;
+  }
+  
+  .predictions-table table {
+    min-width: 600px;
+  }
+}
+

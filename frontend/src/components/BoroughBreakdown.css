@@ -1,0 +1,42 @@
+.borough-breakdown {
+  height: 100%;
+}
+
+.chart-container {
+  margin-bottom: 1.5rem;
+}
+
+.borough-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.borough-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.875rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.borough-name {
+  font-weight: 600;
+  color: #1a1a1a;
+  font-size: 0.875rem;
+}
+
+.borough-stats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.no-data {
+  color: #999;
+  text-align: center;
+  padding: 2rem;
+}
+
